@@ -109,6 +109,8 @@ GameObject:
   - component: {fileID: 1880196471672425242}
   - component: {fileID: 1322791984994378080}
   - component: {fileID: 4369374348362383973}
+  - component: {fileID: 9170881984528761658}
+  - component: {fileID: 9170881984528761659}
   m_Layer: 0
   m_Name: green balloon
   m_TagString: Untagged
@@ -123,7 +125,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8190687043415387550}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.020000458, y: 2.14, z: 0}
   m_LocalScale: {x: 1.3, y: 1.6, z: 1.25}
   m_ConstrainProportionsScale: 0
@@ -195,6 +197,34 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9170881984528761658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8190687043415387550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ada62fab4819fa74a9280f225edff3a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cliccToPop: 3
+  scaleToIncrease: 0.1
+--- !u!114 &9170881984528761659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8190687043415387550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52882532d593ba64789627b6f9846ffa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  upperBound: 10
 --- !u!1 &8928398794493895227
 GameObject:
   m_ObjectHideFlags: 0

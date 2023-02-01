@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4099934802623725546}
   - component: {fileID: 3506518558405121424}
   - component: {fileID: 2184538909412144789}
+  - component: {fileID: 8955356906654913203}
+  - component: {fileID: 8955356906654913204}
   m_Layer: 0
   m_Name: red balloon
   m_TagString: Untagged
@@ -98,6 +100,34 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8955356906654913203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6005834025945831790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ada62fab4819fa74a9280f225edff3a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cliccToPop: 7
+  scaleToIncrease: 0.1
+--- !u!114 &8955356906654913204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6005834025945831790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52882532d593ba64789627b6f9846ffa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  upperBound: 10
 --- !u!1 &6420482871991604939
 GameObject:
   m_ObjectHideFlags: 0
