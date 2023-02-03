@@ -9,12 +9,15 @@ public class FloatyBalloons : MonoBehaviour
 
     public float upperBound = 20;
 
+    public ScoreManager scoreManager; // reference to the scoremanager
 
+    public balloon Balloon; //reference balloon script for score
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
+        Balloon = GetComponent<balloon>();
     }
 
     // Update is called once per frame
@@ -25,7 +28,8 @@ public class FloatyBalloons : MonoBehaviour
 
         if(transform.position.y > upperBound)
         {
-            Destroy(gameObject);
+            scoreManager.DecreaseScoreText(Balloon.scoreToGive);//reduces score for failure 
+            Destroy(gameObject); //pops balloons
         }
 
     }
